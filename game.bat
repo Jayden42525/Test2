@@ -5,11 +5,11 @@ cls
 echo   ___________      _______        _______       _____    _____         _________________    ____________
 echo  /            \   |       |      |       |     /\ | /\  /\ | /\       |                 |  /            \ 
 echo |             |   |       |      |       |    | -[X]- || -[X]- |      |                 |  |             | 
-echo  \        ___/    |       |      |       |   __\/_|_\/  \/_|_\/____   |_____      ______|   \        ___/
-echo   \        \      |       |______|       |  /\ | /\          /\ | /\       |      |          \       \
+echo  \        ___/    |       |______|       |   __\/_|_\/  \/_|_\/____   |_____      ______|   \        ___/
+echo   \        \      |                      |  /\ | /\          /\ | /\       |      |          \       \
 echo     \       \     |                      | | -[X]- |        | -[X]- |      |      |           \       \ 
-echo      \       \    |                      |  \/_|_\/__    ____\/_|_\/       |      |            \       \  
-echo   ____\       \   |        _______       |     /\ | /\  /\ | /\            |      |         ____\       \ 
+echo      \       \    |        _______       |  \/_|_\/__    ____\/_|_\/       |      |            \       \  
+echo   ____\       \   |       |       |      |     /\ | /\  /\ | /\            |      |         ____\       \ 
 echo  /             \  |       |       |      |    | -[X]- || -[X]- |           |      |        /             \ 
 echo  \_____________/  |_______|       |______|     \/_|_\/  \/_|_\/            |______|        \_____________/
 echo 
@@ -42,7 +42,32 @@ pause
 goto Start
 
 :Start
+cls
+echo 
+echo 
+echo (You wake up to the sound of your phone going off.) "Beautiful day isn't it Jack." *You pet your husky puppy*
+echo (Your phone goes off again but the number is an unknown and foreign looking number.) "What'd you think Jack?" 
+echo (Jack just whimpers wanting to go outside.) 
+echo
+echo 1) *Answer phone*
+echo 2) (Don't answer) Let's get you fed, boy.
+set choice=
+set /p choice=Type the number to print text.
+if not '%choice%'=='' set choice=%choice:~0,1%
+if '%choice%'=='s' goto answerPhone
+if '%choice%'=='e' goto outside
 
+:answerPhone
+cls
+echo
+echo 
+echo "He- (You are abrubtly cut off by a man on the other end, who seems unaware of what you said.)
+echo "H-Hello" (The voice on the other end sounds desperate and scared.) "Is this the hotline....?"
+
+
+:outside
+cls
+echo
 
 echo      _____    _____
 echo     /\ | /\  /\ | /\
@@ -57,6 +82,8 @@ echo     \/_|_\/  \/_|_\/
 
 
 :Exit
+cls
+echo
 echo you failed us.....
 pause
 exit
