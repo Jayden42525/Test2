@@ -55,8 +55,8 @@ echo 2) (Don't answer) Let's get you fed, boy.
 set choice=
 set /p choice=Type the number to print text.
 if not '%choice%'=='' set choice=%choice:~0,1%
-if '%choice%'=='s' goto answerPhone
-if '%choice%'=='e' goto outside
+if '%choice%'=='1' goto answerPhone
+if '%choice%'=='2' goto feedJack
 
 :answerPhone
 cls
@@ -66,17 +66,35 @@ echo "He- (You are abrubtly cut off by a man on the other end, who seems unaware
 echo "H-Hello" (The voice on the other end sounds desperate and scared.) "Is this the hotline....?"
 echo 
 echo 1) (Lie) Yes sir, What can I do for you!
-echo 2) (Truth) No, this isn't th
+echo 2) (Truth) No, this isn't th-
+echo 3) (Confused) What?!? I just woke up!
+set choice=
+set /p choice=Type the number to print text.
+if not '%choice%'=='' set choice=%choice:~0,1%
+if '%choice%'=='1' goto callCont
+if '%choice%'=='2' goto truth1
+if '%choice%'=='3' goto end1
+
+:callCont
+cls
+echo 
+
+:feedJack
+cls
+echo *You go to the Kitchen and open the cabinet to realize that you ran out of dog food* 
+echo “Sorry Jack you’re out of food” *Jack whimpers*  “Guess we’re going to have to go to the store”
+echo 
+echo 1) *You decide to take Jack with you so you grab his leash* *Jack gets excited* “Come on buddy”
+echo 2) *You lock up Jack in his cage and head out the door* “I’ll see you when I get back I’m just 
+echo                            going to run out and get you some food”
 
 set choice=
 set /p choice=Type the number to print text.
 if not '%choice%'=='' set choice=%choice:~0,1%
-if '%choice%'=='s' goto answerPhone
-if '%choice%'=='e' goto outside
+if '%choice%'=='1' goto grabLeash
+if '%choice%'=='2' goto
 
-:outside
-cls
-echo
+:grabLeash
 
 echo      _____    _____
 echo     /\ | /\  /\ | /\
@@ -89,6 +107,15 @@ echo     /\ | /\  /\ | /\
 echo    | -[X]- || -[X]- |
 echo     \/_|_\/  \/_|_\/   
 
+:end1
+cls
+echo 
+echo
+echo "I see...... I'm sorry to upset you. Have...Have a good day." (From the bedroom in your-
+echo        Appartment, you hear a bang from the room nextdoor and something drop.) 
+echo 
+pause
+goto startScreen
 
 :Exit
 cls
