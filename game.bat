@@ -51,6 +51,7 @@ echo (Jack just whimpers wanting to go outside.)
 echo
 echo 1) *Answer phone*
 echo 2) (Don't answer) Let's get you fed, boy.
+
 set choice=
 set /p choice=Type the number to print text.
 if not '%choice%'=='' set choice=%choice:~0,1%
@@ -63,7 +64,15 @@ echo
 echo 
 echo "He- (You are abrubtly cut off by a man on the other end, who seems unaware of what you said.)
 echo "H-Hello" (The voice on the other end sounds desperate and scared.) "Is this the hotline....?"
+echo 
+echo 1) (Lie) Yes sir, What can I do for you!
+echo 2) (Truth) No, this isn't th
 
+set choice=
+set /p choice=Type the number to print text.
+if not '%choice%'=='' set choice=%choice:~0,1%
+if '%choice%'=='s' goto answerPhone
+if '%choice%'=='e' goto outside
 
 :outside
 cls
