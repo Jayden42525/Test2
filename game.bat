@@ -17,6 +17,7 @@ echo
 echo
 echo Press the button "s" to start...
 echo Press the button "e" to end all hope...
+echo Press the button "f" to pay respects...
 pause
 
 set choice=
@@ -24,7 +25,7 @@ set /p choice=Type the number to print text.
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='s' goto warning
 if '%choice%'=='e' goto Exit
-
+if if '%choice%'=='f' goto respec
 :warning
 cls
 echo !!!WARNING!!!   !!!WARNING!!!   !!!WARNING!!!   !!!WARNING!!!   !!!WARNING!!!   !!!WARNING!!!   !!!WARNING!!!
