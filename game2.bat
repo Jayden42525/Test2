@@ -20,7 +20,15 @@ set /p choice=Type the number to print text.
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='s' goto Start
 if '%choice%'=='e' goto Exit
-if if '%choice%'=='f' goto respec
+if '%choice%'=='f' goto respec
+
+:respec
+cls
+echo F0R D3M MEMES!
+echo
+echo (Push anything to continue)
+pause
+goto startScreen
 
 :Start
 cls
