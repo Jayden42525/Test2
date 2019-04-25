@@ -1,5 +1,24 @@
 @echo off
 cls
+echo   ___          ___                    ___      ___                      __________
+echo  |   \        /   |       ____       |   \    |   |   _____________    |          |
+echo  |     \    /     |      /    \      |     \  |   |  |____     ____|   |      ____|
+echo  |       \/       |     /  /\  \     |       \|   |       |   |        |    |
+echo  |   |\      /|   |    /  /  \  \    |   |\       |   ____|   |____    |    |_____
+echo  |   |  \  /  |   |   /__/    \__\   |   |  \     |  |_____________|   |          |
+echo  |___|        |___|                  |___|    \___|                    |__________|
+echo
+echo Press the button "s" to start...
+echo Press the button "e" to end all hope...
+echo Press the button "f" to pay respects...
+pause
+
+set choice=
+set /p choice=Type the number to print text.
+if not '%choice%'=='' set choice=%choice:~0,1%
+if '%choice%'=='s' goto Start
+if '%choice%'=='e' goto Exit
+if '%choice%'=='f' goto respec
 
 :startScreen
 echo   ___          ___                    ___      ___                      __________
