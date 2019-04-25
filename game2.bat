@@ -12,14 +12,12 @@ echo Press the button "s" to start...
 echo Press the button "e" to end all hope...
 echo Press the button "f" to pay respects...
 pause
-
 set choice=
 set /p choice=Type the number to print text.
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='s' goto Start
 if '%choice%'=='e' goto Exit
 if '%choice%'=='f' goto respec
-
 :startScreen
 echo   ___          ___                    ___      ___                      __________
 echo  |   \        /   |       ____       |   \    |   |   _____________    |          |
@@ -33,14 +31,12 @@ echo Press the button "s" to start...
 echo Press the button "e" to end all hope...
 echo Press the button "f" to pay respects...
 pause
-
 set choice=
 set /p choice=Type the number to print text.
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='s' goto Start
 if '%choice%'=='e' goto Exit
 if '%choice%'=='f' goto respec
-
 :respec
 cls
 echo F0R D3M MEMES!
@@ -48,7 +44,6 @@ echo
 echo (Push anything to continue)
 pause
 goto startScreen
-
 :Start
 cls
 echo 
@@ -59,13 +54,11 @@ echo (Jack just whimpers wanting to go outside.)
 echo
 echo 1) *Answer phone* (DON'T CHOOSE, NOT FINISHED)
 echo 2) (Don't answer) Let's get you fed, boy.
-
 set choice=
 set /p choice=Type the number to print text.
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='1' goto answerPhone
 if '%choice%'=='2' goto feedJack
-
 :answerPhone
 cls
 echo
@@ -82,8 +75,6 @@ if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='1' goto callCont
 if '%choice%'=='2' goto truth1
 if '%choice%'=='3' goto end1
-
-
 :feedJack
 cls
 echo *You go to the Kitchen and open the cabinet to realize that you ran out of dog food* 
@@ -98,7 +89,6 @@ set /p choice=Type the number to print text.
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='1' goto grabLeash
 if '%choice%'=='2' goto radio
-
 :radio
 cls
 echo *You walk out to your dull blue sedan, get in the car, and drive off to the store* *You turn on
@@ -120,7 +110,6 @@ echo
 echo (Push a button to continue)
 pause
 goto startScreen
-
 :grabLeash
 cls
 echo *You walk out to your dull blue sedan with Jack’s leash in your hand* *you open the car door* 
@@ -134,7 +123,6 @@ set /p choice=Type the number to print text.
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='1' goto store
 if '%choice%'=='2' goto walk (NOT FINISHED, DON'T CHOOSE)
-
 :store
 cls
 echo *You and Jack are greeted by friendly workers* *You walk to the dog food section, passing many
